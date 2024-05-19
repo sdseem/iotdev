@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h3>Write or edit JSON</h3>
+<form method="POST"
+           action="/file" modelAttribute="employee">
+    <h3 th:text="${message}"></h3>
+    <br>
+    <input type="submit" value="Save text"/><br><br>
+    <textarea content="1234" id="ftext" name="fname" rows="50" cols="200" th:text="${text}"></textarea>
+</form>
+</body>
+</html>
